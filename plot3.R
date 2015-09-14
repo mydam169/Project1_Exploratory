@@ -8,9 +8,9 @@ library(dplyr)
 dat <- filter(df, (Date == "2007-02-01") | (Date == "2007-02-02"))
 
 #Converting to numeric variables
-dat$Sub_metering_1 <- as.numeric(df$Sub_metering_1)
-dat$Sub_metering_2 <- as.numeric(df$Sub_metering_2)
-dat$Sub_metering_3 <- as.numeric(df$Sub_metering_3)
+dat$Sub_metering_1 <- as.numeric(dat$Sub_metering_1)
+dat$Sub_metering_2 <- as.numeric(dat$Sub_metering_2)
+dat$Sub_metering_3 <- as.numeric(dat$Sub_metering_3)
 
 #Plotting
 with(dat, {
